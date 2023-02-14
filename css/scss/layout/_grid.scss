@@ -1,0 +1,69 @@
+// @media #{$phoneScreen} {
+
+// }
+
+@media #{$smallScreen} {
+
+    html{
+        font-size: 50%;
+    }
+
+    header{
+
+        .navbar{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 99%;
+            background-color: $bgColor;
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            
+
+            &.active {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+
+            a{
+                margin: 2rem;
+                font-size: 2rem;
+                display: block;
+            }
+        }
+    }
+
+    .bars{
+        display: inline-block;
+
+        #menu-btn:hover {
+            color: $aqua;
+        }
+    }
+
+    .about h3 {
+        font-size: 3.5rem !important;
+    }
+    .banner h3 {
+        font-size: 3rem;
+    }
+    .credit {
+        font-size: 1rem;
+    }
+}
+
+@media #{$midScreen} {
+    
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 1.5rem 2rem;
+    }
+    section{
+        padding: 3rem 2rem;
+    }
+}
+
+
+@media #{$labScreen} {
+    
+}

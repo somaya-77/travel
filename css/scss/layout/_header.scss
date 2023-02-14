@@ -1,0 +1,46 @@
+header {
+    position: fixed;
+    background-color: $bgColor;
+    left: 0;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 9%;
+    z-index: 100;
+
+    .navbar a:first-child{
+        color: $aqua;
+    }
+    .navbar a {
+        font-size: 1.7rem;
+        color: $lightColor;
+        display: inline-block;
+        margin: 0 1rem;
+
+        &:hover {
+            color: $aqua;
+        }
+    }
+}
+
+.logo a{
+    font-size: 2.5rem;
+    color: $white;
+    font-weight: bolder;
+
+    i{
+        color: $aqua;
+        padding-right: .5rem;
+    }
+}
+
+.bars{
+    display: none;
+}
+#menu-btn{
+    color:$white;
+    cursor: pointer;
+    font-size: 2.5rem;
+}
